@@ -1,0 +1,1724 @@
+{
+    "scan_id": "PKI-20261114-145906",
+    "scanned_at": "2026-11-14T14:59:06.723927+00:00",
+    "certificates_scanned": 63,
+    "scan_errors_count": 0,
+    "policy": {
+        "expiring_soon_days": 7,
+        "maximum_validity_days": 398,
+        "minimum_rsa_key_size": 2048
+    },
+    "summary": {
+        "total_findings": 53,
+        "critical": 15,
+        "high": 29,
+        "medium": 9,
+        "low": 0
+    },
+    "certificates": [
+        {
+            "certificate": "78.crt",
+            "path": "sandbox\\certificates\\expired\\78.crt",
+            "subject": "CN=78.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "1ff1e82152d2222c0cb45d2a205d195b",
+            "not_before": "2026-11-14T09:17:20+00:00",
+            "not_after": "2026-11-22T09:18:20+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "78.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "c290570af581709729afb46591d2ec4a0a04166e21e10eee175af204966248f9",
+            "findings": []
+        },
+        {
+            "certificate": "demo-899f31.crt",
+            "path": "sandbox\\certificates\\expired\\demo-899f31.crt",
+            "subject": "CN=demo-899f31.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "6478702e5a234a4b5c7816d2c2382e12",
+            "not_before": "2026-11-14T07:59:36+00:00",
+            "not_after": "2026-11-15T08:00:36+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo-899f31.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "7e812e56a4dcbd6cc503d1862e6cca4cc055cfef01891355c07ca0e3a4f7f800",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:00:36+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "demo1.crt",
+            "path": "sandbox\\certificates\\expired\\demo1.crt",
+            "subject": "CN=demo1.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "b81dce4b34f1eb606c92204a33a80d32",
+            "not_before": "2026-11-14T08:17:59+00:00",
+            "not_after": "2026-11-22T08:18:59+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo1.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "f12dc922187370beeecc50c01009d2840e61ac36dd72b4a8b9562afe45c01ca4",
+            "findings": []
+        },
+        {
+            "certificate": "demo100.crt",
+            "path": "sandbox\\certificates\\expired\\demo100.crt",
+            "subject": "CN=demo100.pki.local",
+            "issuer": "CN=demo100.pki.local",
+            "serial_number": "62b60e3d4c82ada249455181e8e60697f472917e",
+            "not_before": "2026-11-12T11:57:11+00:00",
+            "not_after": "2026-11-13T11:57:11+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo100.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "2c1c02f36eb10706978b3d17b6c29c9ac025c0e8aae15df85267f4801e6e580c",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T11:57:11+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=demo100.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "demo1000.crt",
+            "path": "sandbox\\certificates\\expired\\demo1000.crt",
+            "subject": "CN=demo1000.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "9c3ba2d4f172a580a1bb68aba886f49f",
+            "not_before": "2026-11-14T11:57:52+00:00",
+            "not_after": "2026-11-22T11:58:52+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo1000.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "2c18b259fe29382ea6c9e5e6bc039b62d6a9ef3c0c4233edb57e12e9ffbf204b",
+            "findings": []
+        },
+        {
+            "certificate": "demo12000.crt",
+            "path": "sandbox\\certificates\\expired\\demo12000.crt",
+            "subject": "CN=demo12000.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "5413b8f8fcdd4b0368c6ff321cea847d",
+            "not_before": "2026-11-14T14:54:51+00:00",
+            "not_after": "2026-11-22T14:55:51+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo12000.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "9a012c9fe8d1ce3a0847f01eed627ae0fd7c52ea69890cf75e237ee42297f1de",
+            "findings": []
+        },
+        {
+            "certificate": "demo3.crt",
+            "path": "sandbox\\certificates\\expired\\demo3.crt",
+            "subject": "CN=demo3.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "8a526d07d9a8afdb687e6c0c73d587be",
+            "not_before": "2026-11-14T08:21:28+00:00",
+            "not_after": "2026-11-22T08:22:28+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo3.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "0306d0319428523921caa1ed6a509d08239115a8ca0f74d271048405f43dbaba",
+            "findings": []
+        },
+        {
+            "certificate": "expired01.crt",
+            "path": "sandbox\\certificates\\expired\\expired01.crt",
+            "subject": "CN=test-expired.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "9ff6a43dbe92ff1357f4a88eab7017f8",
+            "not_before": "2026-11-14T08:05:49+00:00",
+            "not_after": "2026-11-22T08:06:49+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "test-expired.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "c94b72d8d4c454a9f6c96269409d94fcbbf6dd82d17f08eb3a792b7781ddc906",
+            "findings": []
+        },
+        {
+            "certificate": "expired02.crt",
+            "path": "sandbox\\certificates\\expired\\expired02.crt",
+            "subject": "CN=expired02.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "ca5dbadbaa62eeb24185e587fb1f47da",
+            "not_before": "2026-11-14T07:59:37+00:00",
+            "not_after": "2026-11-15T08:00:37+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expired02.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "30ca8571d29cd013b177737aaeb755dbf60a3130db5fd3d1837b0b9304f9a2ec",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:00:37+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "expired03.crt",
+            "path": "sandbox\\certificates\\expired\\expired03.crt",
+            "subject": "CN=expired03.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "25ad9093603f66e285c558617f799762",
+            "not_before": "2026-11-14T08:06:01+00:00",
+            "not_after": "2026-11-22T08:07:01+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expired03.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "f9ca652f121c6fe2a4f94c0d706490034303d95969ed66e2ace0be57f35d1b41",
+            "findings": []
+        },
+        {
+            "certificate": "expired04.crt",
+            "path": "sandbox\\certificates\\expired\\expired04.crt",
+            "subject": "CN=expired04.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "e35075dcf1248cd98f1e7ec78483fcdd",
+            "not_before": "2026-11-14T08:10:07+00:00",
+            "not_after": "2026-11-22T08:11:07+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expired04.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "4cd06cd74a9d903a9fb9f17e0ebacb6d98ebc08e74d256a0dcb368bbdd3a8378",
+            "findings": []
+        },
+        {
+            "certificate": "expired05.crt",
+            "path": "sandbox\\certificates\\expired\\expired05.crt",
+            "subject": "CN=expired05.pki.local",
+            "issuer": "CN=expired05.pki.local",
+            "serial_number": "b7650c65bd6382809eec84b453ed8f3c715a60",
+            "not_before": "2026-11-10T19:36:18+00:00",
+            "not_after": "2026-11-11T19:36:18+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expired05.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "badb7beb80fb04fda2db823a61add2d62ff86cd09caf5d69da1bc56bdb31d0e2",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-11T19:36:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=expired05.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "expired06.crt",
+            "path": "sandbox\\certificates\\expired\\expired06.crt",
+            "subject": "CN=expired06.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "a0a7a0e59353b01a338cb9331b1df1c0",
+            "not_before": "2026-11-14T08:10:15+00:00",
+            "not_after": "2026-11-22T08:11:15+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expired06.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "e0004690bc87ff1361363ab7af5aff6ded023e817e71527901ee9addc172cba8",
+            "findings": []
+        },
+        {
+            "certificate": "expired07.crt",
+            "path": "sandbox\\certificates\\expired\\expired07.crt",
+            "subject": "CN=expired07.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "5a8feee7ef02f363f037c6d7c6823ded",
+            "not_before": "2026-11-14T08:05:56+00:00",
+            "not_after": "2026-11-22T08:06:56+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expired07.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "d319ac516bf14bb14c7fba5b1ae2eeafd01d2b3760e56a69baa1ed66700404b9",
+            "findings": []
+        },
+        {
+            "certificate": "nithin122.crt",
+            "path": "sandbox\\certificates\\expired\\nithin122.crt",
+            "subject": "CN=nithin122.pki.local",
+            "issuer": "CN=nithin122.pki.local",
+            "serial_number": "5802bdb457cfaa9ec1a6248f3a4fea73df0eb198",
+            "not_before": "2026-11-12T08:52:57+00:00",
+            "not_after": "2026-11-13T08:52:57+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "nithin122.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "399109c4d7795ad4a75deb65f9f6e58c4fc620ac9824fcb24022f035ca6d07dc",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T08:52:57+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=nithin122.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "qqq.crt",
+            "path": "sandbox\\certificates\\expired\\qqq.crt",
+            "subject": "CN=qqq.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "e9f5edb6dfdf9130014dfc836f8bf3eb",
+            "not_before": "2026-11-14T09:02:58+00:00",
+            "not_after": "2026-11-22T09:03:58+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "qqq.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "3a233d57b2c3974b919398e960efbb4b2ccdd3c5b9ddb13971fc7dd8dc145815",
+            "findings": []
+        },
+        {
+            "certificate": "demo-dbf19b.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo-dbf19b.crt",
+            "subject": "CN=demo-dbf19b.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "8299b6f7dad9f9815450af110a47b0dc",
+            "not_before": "2026-11-14T08:00:25+00:00",
+            "not_after": "2026-11-15T08:01:25+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo-dbf19b.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "36b236d1bdb9d8026f2e7f9564fb64f0576f1837e208d62ca1eb617d459b5a89",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:01:25+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "demo120.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo120.crt",
+            "subject": "CN=demo120.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "ccb5a56fc7b213d40a241decb9611c7d",
+            "not_before": "2026-11-14T14:32:57+00:00",
+            "not_after": "2026-11-14T16:32:57+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo120.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "68d651d23c542869f9e4dc39dde1abc0e418ad2e343f2cf0af5ac1a0fdcb18e3",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T16:32:57+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "demo1200.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo1200.crt",
+            "subject": "CN=demo1200.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "1a6a1f9fccc28d7213f2d12a70b008c6",
+            "not_before": "2026-11-14T14:34:11+00:00",
+            "not_after": "2026-11-14T16:34:11+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo1200.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "4f6686bd2a49260fe356532e51b72ba1bcd2c8587245af3e2fdc21f1def8a250",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T16:34:11+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "demoplease1.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demoplease1.crt",
+            "subject": "CN=demoplease1.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "ac61b40fb43ac402eeb2ac3ef135d6fc",
+            "not_before": "2026-11-14T08:39:01+00:00",
+            "not_after": "2026-11-14T10:39:01+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demoplease1.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "7bfd6d5a60892591fa3dac2320f50a0718a98da19eacf1ec0a21969e74d37dd0",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-14T10:39:01+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "demoplease23.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demoplease23.crt",
+            "subject": "CN=demoplease23.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "81b5d1904210ed41210f08c89094a913",
+            "not_before": "2026-11-14T08:44:44+00:00",
+            "not_after": "2026-11-22T08:45:44+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demoplease23.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "b22569fc93dec8b2f415afb289ab077d3e2dc992830dbdcf67e33a7a920c0bd4",
+            "findings": []
+        },
+        {
+            "certificate": "expiringsoon01.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon01.crt",
+            "subject": "CN=expiringsoon01.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "ededa3f88810feed4738e29cafa1cb28",
+            "not_before": "2026-11-12T19:31:18+00:00",
+            "not_after": "2026-11-12T21:31:18+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expiringsoon01.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "6aa34ade01852b68719f725e34801badc6bdaa856ce619f44d45f0ef27e7c7e3",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "expiringsoon02.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon02.crt",
+            "subject": "CN=expiringsoon02.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "b68852db057294f4a1b5750bdc32b24",
+            "not_before": "2026-11-14T08:10:18+00:00",
+            "not_after": "2026-11-22T08:11:18+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expiringsoon02.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "11954fba4d21178baae804bfc0738a5898ac91ccfc928f681abdf0d55d11c1cb",
+            "findings": []
+        },
+        {
+            "certificate": "expiringsoon03.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon03.crt",
+            "subject": "CN=expiringsoon03.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "221f5273964bb419e8ecbf1393d04398",
+            "not_before": "2026-11-12T19:31:18+00:00",
+            "not_after": "2026-11-12T21:31:18+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expiringsoon03.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "c0475a0b4234935e3b60c9b33711528b0d1c359705b36e53aba0b29a749d5b68",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "expiringsoon04.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon04.crt",
+            "subject": "CN=expiringsoon04.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "3c441a32c8f7d0e008cfdb1ef2e64e4f",
+            "not_before": "2026-11-14T08:10:24+00:00",
+            "not_after": "2026-11-22T08:11:24+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expiringsoon04.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "8e768787436b890e37e831731853f73e1203e3d6d7412da1bc8da4c1120dc3b6",
+            "findings": []
+        },
+        {
+            "certificate": "expiringsoon05.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon05.crt",
+            "subject": "CN=expiringsoon05.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "46af2180ea41f146eeb7cd5a04a57ee3",
+            "not_before": "2026-11-12T19:31:19+00:00",
+            "not_after": "2026-11-12T21:31:19+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "expiringsoon05.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "e20409a9da5b774c7efb24222e06714e5213acc537860bb20f274bbe1292a239",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:31:19+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "test-expiring.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\test-expiring.crt",
+            "subject": "CN=test-expiring.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "ecaa2058fa0b3da7e74749808e8e464d",
+            "not_before": "2026-11-12T19:28:58+00:00",
+            "not_after": "2026-11-12T21:29:58+00:00",
+            "validity_days": 0.08,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "test-expiring.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "082dea9f0095002a6904c79dabf47cc14aae34cc43f12c396b89640be3c1afcc",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:29:58+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "expired.badssl.com.crt",
+            "path": "sandbox\\certificates\\live-test\\expired.badssl.com.crt",
+            "subject": "CN=*.badssl.com,OU=PositiveSSL Wildcard,OU=Domain Control Validated",
+            "issuer": "CN=COMODO RSA Domain Validation Secure Server CA,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
+            "serial_number": "4ae79549fa9abe3f100f17a478e16909",
+            "not_before": "2015-04-09T00:00:00+00:00",
+            "not_after": "2015-04-12T23:59:59+00:00",
+            "validity_days": 4.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "*.badssl.com",
+                "badssl.com"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "ba105ce02bac76888ecee47cd4eb7941653e9ac993b61b2eb3dcc82014d21b4f",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2015-04-12T23:59:59+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "www.amazon.com.crt",
+            "path": "sandbox\\certificates\\live-test\\www.amazon.com.crt",
+            "subject": "CN=www.amazon.com",
+            "issuer": "CN=Amazon RSA 2048 M04,O=Amazon,C=US",
+            "serial_number": "5660c2ea856e3d523953e939e886b5d",
+            "not_before": "2026-01-19T00:00:00+00:00",
+            "not_after": "2027-01-11T23:59:59+00:00",
+            "validity_days": 358.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "www.amazon.com",
+                "yp.amazon.com",
+                "konrad-test.amazon.com",
+                "p-yo-www-amazon-com-kalias.amazon.com",
+                "mp3recs.amazon.com",
+                "p-nt-www-amazon-com-kalias.amazon.com",
+                "origin-www.amazon.com",
+                "buybox.amazon.com",
+                "uedata.amazon.com",
+                "us.amazon.com",
+                "yellowpages.amazon.com",
+                "home.amazon.com",
+                "www.m.amazon.com",
+                "iphone.amazon.com",
+                "www.amzn.com",
+                "huddles.amazon.com",
+                "amazon.com",
+                "corporate.amazon.com",
+                "shop.business.amazon.com",
+                "p-y3-www-amazon-com-kalias.amazon.com",
+                "buckeye-retail-website.amazon.com",
+                "www.cdn.amazon.com",
+                "test-www.amazon.com",
+                "amzn.com"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "ab1fe26963731abd166a55c3657277db884d4c2493510eff078a0170586fe565",
+            "findings": []
+        },
+        {
+            "certificate": "www.flipkart.com.crt",
+            "path": "sandbox\\certificates\\live-test\\www.flipkart.com.crt",
+            "subject": "CN=flipkart.com,O=FLIPKART INTERNET PRIVATE LIMITED,L=Bengaluru,ST=Karnataka,C=IN",
+            "issuer": "CN=DigiCert Global G3 TLS ECC SHA384 2020 CA1,O=DigiCert Inc,C=US",
+            "serial_number": "4a47dbf4bf0e0c3cfa67448d32a9ffd",
+            "not_before": "2026-06-05T00:00:00+00:00",
+            "not_after": "2026-12-20T23:59:59+00:00",
+            "validity_days": 199.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha384",
+            "san_dns_names": [
+                "flipkart.com",
+                "1.rome.api.flipkart.com",
+                "1.rome.api.flipkart.net",
+                "1.uiscoop.flipkart.com",
+                "1.www.flipkart.com",
+                "2.rome.api.flipkart.com",
+                "2.rome.api.flipkart.net",
+                "2.uiscoop.flipkart.com",
+                "accounts.flipkart.com",
+                "auth.flipkart.com",
+                "axis.store.flipkart.com",
+                "dl.flipkart.com",
+                "insurance.flipkart.com",
+                "m.flipkart.com",
+                "mx.flipkart.com",
+                "offers.store.flipkart.com",
+                "pay.flipkart.com",
+                "preprod.flipkart.com",
+                "tech.flipkart.com",
+                "www.flipkart.com",
+                "yono.store.flipkart.com"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "51c5c2a4b3d910daf845239d1771263ec97fc8b158992cd29432b0c66d86130f",
+            "findings": []
+        },
+        {
+            "certificate": "www.google.com.crt",
+            "path": "sandbox\\certificates\\live-test\\www.google.com.crt",
+            "subject": "CN=www.google.com",
+            "issuer": "CN=WE2,O=Google Trust Services,C=US",
+            "serial_number": "c3352595df1f45d10939bb5104ff60fe",
+            "not_before": "2026-11-03T08:29:37+00:00",
+            "not_after": "2027-01-26T08:29:36+00:00",
+            "validity_days": 84.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "www.google.com"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "df5e2537aea584ee55ea45485540964e1c27cfc6f9ca64382d9c963672a4774d",
+            "findings": []
+        },
+        {
+            "certificate": "remediation-replacement.crt",
+            "path": "sandbox\\certificates\\remediation-tests\\remediation-replacement.crt",
+            "subject": "CN=remediation-test.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "1167d66253c8312065e46991f98b94f7",
+            "not_before": "2026-11-13T18:59:11+00:00",
+            "not_after": "2026-11-14T19:00:11+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "remediation-test.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "51bd1a1a175a7b24fbf3d8b491d4b0f921f8df4c84996cede5342086215d7e72",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:00:11+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "remediation-test.crt",
+            "path": "sandbox\\certificates\\remediation-tests\\remediation-test.crt",
+            "subject": "CN=remediation-test.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "9a440e33171d3485a89438c0965b7915",
+            "not_before": "2026-11-13T18:52:54+00:00",
+            "not_after": "2026-11-14T18:53:54+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "remediation-test.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "253df421e3d340b9b0f4e9ba7e595496d895808c72e537b356767e04a3e010b6",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T18:53:54+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "788.crt",
+            "path": "sandbox\\certificates\\self-signed\\788.crt",
+            "subject": "CN=788.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "753c0bea5b74a7f0d89078bfc6d8f9ef",
+            "not_before": "2026-11-14T09:22:28+00:00",
+            "not_after": "2026-11-22T09:23:28+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "788.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "3c61b0f988f02b34a43e3621fa79a6547c59a9d3f83e09286dd2e7e7baf52142",
+            "findings": []
+        },
+        {
+            "certificate": "demo.crt",
+            "path": "sandbox\\certificates\\self-signed\\demo.crt",
+            "subject": "CN=demo.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "b0396476b79fb33ec646d15594823ef3",
+            "not_before": "2026-11-14T08:17:16+00:00",
+            "not_after": "2026-11-22T08:18:16+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "279bca8f288da61ddad90e3caaf513b8e3faa7d70339767753cb42997fbb6f02",
+            "findings": []
+        },
+        {
+            "certificate": "demo10000.crt",
+            "path": "sandbox\\certificates\\self-signed\\demo10000.crt",
+            "subject": "CN=demo10000.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "d230d4d08e0933e854a07e73a5289235",
+            "not_before": "2026-11-14T11:59:48+00:00",
+            "not_after": "2026-11-22T12:00:48+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo10000.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "40f02a41458cb7681c6380676b266f5c0f9b125619643d207c153c8e5f768a9f",
+            "findings": []
+        },
+        {
+            "certificate": "demo120000.crt",
+            "path": "sandbox\\certificates\\self-signed\\demo120000.crt",
+            "subject": "CN=demo120000.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "44ee1c4eb206a79db6be57a66b3e6229",
+            "not_before": "2026-11-14T14:55:29+00:00",
+            "not_after": "2026-11-22T14:56:29+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demo120000.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "950dd4add3441f671691ef5fc9727a89035b492ffe531ce4012fa811c910f274",
+            "findings": []
+        },
+        {
+            "certificate": "demomed.crt",
+            "path": "sandbox\\certificates\\self-signed\\demomed.crt",
+            "subject": "CN=demomed.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "5a380b600a44e55581af2b94775ab956",
+            "not_before": "2026-11-14T12:00:49+00:00",
+            "not_after": "2026-11-22T12:01:49+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demomed.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "5e68fe7eba41a620c5847b1abccb95ed559d5031064fa7173da8a137dba86ce3",
+            "findings": []
+        },
+        {
+            "certificate": "demoplease.crt",
+            "path": "sandbox\\certificates\\self-signed\\demoplease.crt",
+            "subject": "CN=demoplease.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "bf5bb33e3b511755c22fe45fd4f2eff8",
+            "not_before": "2026-11-14T08:46:26+00:00",
+            "not_after": "2026-11-22T08:47:26+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "demoplease.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "96482f44b62a12da606b153c7a4ce7fadfcf8803bf773c324b2c977b066ffe99",
+            "findings": []
+        },
+        {
+            "certificate": "nithin.crt",
+            "path": "sandbox\\certificates\\self-signed\\nithin.crt",
+            "subject": "CN=nithin.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "977a7d0c27d434d006e12c1c06af522a",
+            "not_before": "2026-11-14T08:46:27+00:00",
+            "not_after": "2026-11-22T08:47:27+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "nithin.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "d1259f198255be6cd5a24eaaa9aab5ea373e890dd96d30bf173291f52a57ce24",
+            "findings": []
+        },
+        {
+            "certificate": "selfsigned01.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned01.crt",
+            "subject": "CN=selfsigned01.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "85ce768523b8cdfcce263921f4abbedb",
+            "not_before": "2026-11-13T19:06:03+00:00",
+            "not_after": "2026-11-14T19:07:03+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "selfsigned01.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "789f8f93fc81c8a125630b9684bb423bafc581fae81531b8f01359babebf7b29",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:03+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "selfsigned02.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned02.crt",
+            "subject": "CN=selfsigned02.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "741c213897002ebaeab085a4537a67e8",
+            "not_before": "2026-11-13T19:06:04+00:00",
+            "not_after": "2026-11-14T19:07:04+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "selfsigned02.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "88df98ae81c8261a9ff0b3181e6bf360b8469b47d618bd0b95e23e5ec740f6e4",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:04+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "selfsigned03.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned03.crt",
+            "subject": "CN=selfsigned03.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "41f5b451f888ec13ee962f526d8d8355",
+            "not_before": "2026-11-13T19:06:05+00:00",
+            "not_after": "2026-11-14T19:07:05+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "selfsigned03.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "0bb950948c6114649f9ab14b5f6ee9555cc3c3e39d9b4282cad38c31680bd7e8",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:05+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "selfsigned04.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned04.crt",
+            "subject": "CN=selfsigned04.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "2fd5235be0321f88a446d4a28805706b",
+            "not_before": "2026-11-13T19:06:06+00:00",
+            "not_after": "2026-11-14T19:07:06+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "selfsigned04.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "c33145dd06f750ff9ac64b17451c133ee4fe7b26150647f93bfef0b3a3129c01",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:06+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "selfsigned05.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned05.crt",
+            "subject": "CN=selfsigned05.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "3a73c430cf64b42843947c5bf09901ce",
+            "not_before": "2026-11-13T19:06:07+00:00",
+            "not_after": "2026-11-14T19:07:07+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "selfsigned05.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "a46f5eaa56173574602730f64f81b94ad298aa3321d14fa0e7a556d84361186e",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:07+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "selfsigned06.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned06.crt",
+            "subject": "CN=selfsigned06.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "b767d788c46ec449fab68b8262df1b27",
+            "not_before": "2026-11-13T19:06:07+00:00",
+            "not_after": "2026-11-14T19:07:07+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 2048,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "selfsigned06.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "d739ef1dd232076ff71331a0574706b4a2a4d36720eef3b0854d2130be519482",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:07+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "nithin1.crt",
+            "path": "sandbox\\certificates\\valid\\nithin1.crt",
+            "subject": "CN=nithin1.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "4dadda66b3d0ad56877b7a33b9ef2c77",
+            "not_before": "2026-11-14T08:46:21+00:00",
+            "not_after": "2026-11-15T08:46:21+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "nithin1.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "cb873226b49b151f63ab3b670a00561a8cd5db08700c4488bc68fb075bab7552",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:46:21+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "nithin12.crt",
+            "path": "sandbox\\certificates\\valid\\nithin12.crt",
+            "subject": "CN=nithin12.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "53b77d37e6e136a4a9d008c6d51012ab",
+            "not_before": "2026-11-14T08:47:13+00:00",
+            "not_after": "2026-11-15T08:47:13+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "nithin12.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "7db6233b09a0138b1d35664af9e821a68633197be4e7b1234ad43342527559a9",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:47:13+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "pritham.crt",
+            "path": "sandbox\\certificates\\valid\\pritham.crt",
+            "subject": "CN=pritham.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "8aa7b72b9c1d968132260bd2e123e543",
+            "not_before": "2026-11-14T08:51:38+00:00",
+            "not_after": "2026-11-22T08:51:38+00:00",
+            "validity_days": 8.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "pritham.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "ed52e051c786cad323e15c15160fde07ddf3b67d30ac42237d083a20647954b6",
+            "findings": []
+        },
+        {
+            "certificate": "server01.crt",
+            "path": "sandbox\\certificates\\valid\\server01.crt",
+            "subject": "CN=server01.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "40ecb68e0bfedbaa4dcc08cf0186b39c",
+            "not_before": "2026-11-12T16:54:29+00:00",
+            "not_after": "2026-11-13T16:55:29+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "server01.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "7bf962c8fb65818b5dc3e5f5b6d5ab67946789c2e4c836281fd4a6ff41694a01",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T16:55:29+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "server02.crt",
+            "path": "sandbox\\certificates\\valid\\server02.crt",
+            "subject": "CN=server02.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "6718cd0754fc35038b83bb6dab7b79ff",
+            "not_before": "2026-11-12T17:29:25+00:00",
+            "not_after": "2026-11-13T17:30:25+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "server02.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "57d75d0ddcf8323f22ec3277222059bdea74b662911c3a17d30c4b5a162fec0a",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T17:30:25+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "valid01.crt",
+            "path": "sandbox\\certificates\\valid\\valid01.crt",
+            "subject": "CN=valid01.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "9e9b5afdadba10c58b5a7b3d84d8ee76",
+            "not_before": "2026-11-12T19:31:18+00:00",
+            "not_after": "2026-11-13T19:31:18+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "valid01.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "5d0cf12d05aff83e0edb495cc5fa076a1e268e56cb7e6c5a5f258d720e600b5e",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "valid02.crt",
+            "path": "sandbox\\certificates\\valid\\valid02.crt",
+            "subject": "CN=valid02.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "21fbebd82ef5a310c594a19330966572",
+            "not_before": "2026-11-12T19:31:18+00:00",
+            "not_after": "2026-11-13T19:31:18+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "valid02.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "e4f5812458a5eef0735902c46a0a41cf46f995d1eff4a504011a5f33c50debd1",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "valid03.crt",
+            "path": "sandbox\\certificates\\valid\\valid03.crt",
+            "subject": "CN=valid03.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "5810d6644c1de3117984bb352fdf1db",
+            "not_before": "2026-11-12T19:31:18+00:00",
+            "not_after": "2026-11-13T19:31:18+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "valid03.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "f42a522342a33635002c149e21222c8e2ce5103340803c2171978a148ee75f07",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "valid04.crt",
+            "path": "sandbox\\certificates\\valid\\valid04.crt",
+            "subject": "CN=valid04.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "3e3c840e45ca82ebd6a31adad6f7d2eb",
+            "not_before": "2026-11-12T19:31:18+00:00",
+            "not_after": "2026-11-13T19:31:18+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "valid04.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "6d3ddba990f635fb43254a249657a105f9e3b71adb43a6fd80fae2aa4785b0ab",
+            "findings": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ]
+        },
+        {
+            "certificate": "valid05.crt",
+            "path": "sandbox\\certificates\\valid\\valid05.crt",
+            "subject": "CN=valid05.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "7dbfdfcaa038aab84aa6b51b9a6605ac",
+            "not_before": "2026-11-14T06:52:26+00:00",
+            "not_after": "2026-11-15T06:52:26+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "valid05.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "4a2352e45bb3a28e93e4b7839ab904c36c94528dade0c1a2fd9942834495a015",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T06:52:26+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "valid06.crt",
+            "path": "sandbox\\certificates\\valid\\valid06.crt",
+            "subject": "CN=valid06.pki.local",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "serial_number": "2edbeb353e82d585439d5e844baccfa4",
+            "not_before": "2026-11-14T06:52:33+00:00",
+            "not_after": "2026-11-15T06:52:33+00:00",
+            "validity_days": 1.0,
+            "public_key_algorithm": "ECPublicKey",
+            "public_key_size": 256,
+            "signature_hash_algorithm": "sha256",
+            "san_dns_names": [
+                "valid06.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "ff8bc61065da4e5467645e3b11e7104ca26a649c5d4c50205997aeafaefb0d5f",
+            "findings": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T06:52:33+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ]
+        },
+        {
+            "certificate": "weak01.crt",
+            "path": "sandbox\\certificates\\weak\\weak01.crt",
+            "subject": "CN=weak01.pki.local",
+            "issuer": "CN=weak01.pki.local",
+            "serial_number": "80acf5d5266a8767",
+            "not_before": "2026-11-12T19:36:19+00:00",
+            "not_after": "2027-11-12T19:36:19+00:00",
+            "validity_days": 365.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 1024,
+            "signature_hash_algorithm": "sha1",
+            "san_dns_names": [
+                "weak01.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "b69a5ad224461aa6ee2511ec1cf7ab84d500f78c563cc2f7af7dc3bde7022a19",
+            "findings": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak01.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "weak02.crt",
+            "path": "sandbox\\certificates\\weak\\weak02.crt",
+            "subject": "CN=weak02.pki.local",
+            "issuer": "CN=weak02.pki.local",
+            "serial_number": "b77fe35d464454cc",
+            "not_before": "2026-11-12T19:36:19+00:00",
+            "not_after": "2027-11-12T19:36:19+00:00",
+            "validity_days": 365.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 1024,
+            "signature_hash_algorithm": "sha1",
+            "san_dns_names": [
+                "weak02.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "51670c0a3ca90206eae4150e78b86d779fb2a1c4413fa8c4fe2d6d420c0dd308",
+            "findings": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak02.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "weak03.crt",
+            "path": "sandbox\\certificates\\weak\\weak03.crt",
+            "subject": "CN=weak03.pki.local",
+            "issuer": "CN=weak03.pki.local",
+            "serial_number": "d5599a88141c0a8c",
+            "not_before": "2026-11-12T19:36:19+00:00",
+            "not_after": "2027-11-12T19:36:19+00:00",
+            "validity_days": 365.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 1024,
+            "signature_hash_algorithm": "sha1",
+            "san_dns_names": [
+                "weak03.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "cbc3451ed167ae6a1c788a04e11f9c7748f757f95b3a04ea469e5055d66491fd",
+            "findings": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak03.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "weak04.crt",
+            "path": "sandbox\\certificates\\weak\\weak04.crt",
+            "subject": "CN=weak04.pki.local",
+            "issuer": "CN=weak04.pki.local",
+            "serial_number": "f1297eee3e5f8975",
+            "not_before": "2026-11-12T19:36:19+00:00",
+            "not_after": "2027-11-12T19:36:19+00:00",
+            "validity_days": 365.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 1024,
+            "signature_hash_algorithm": "sha1",
+            "san_dns_names": [
+                "weak04.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "b39b635b024cfecf406a2b821e86d16efb387146130c77fee07f98833939e4cc",
+            "findings": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak04.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "weak05.crt",
+            "path": "sandbox\\certificates\\weak\\weak05.crt",
+            "subject": "CN=weak05.pki.local",
+            "issuer": "CN=weak05.pki.local",
+            "serial_number": "c5bb1b1f45bdc58b",
+            "not_before": "2026-11-12T19:36:19+00:00",
+            "not_after": "2027-11-12T19:36:19+00:00",
+            "validity_days": 365.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 1024,
+            "signature_hash_algorithm": "sha1",
+            "san_dns_names": [
+                "weak05.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "b6b7ef1d6987360f8413c11f85d57797575380de7b79f0d93f89d7565fa87a94",
+            "findings": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak05.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        },
+        {
+            "certificate": "weaktest01.crt",
+            "path": "sandbox\\certificates\\weak\\weaktest01.crt",
+            "subject": "CN=weaktest01.pki.local",
+            "issuer": "CN=weaktest01.pki.local",
+            "serial_number": "fe210dd5125f9ab2",
+            "not_before": "2026-11-12T19:34:35+00:00",
+            "not_after": "2027-11-12T19:34:35+00:00",
+            "validity_days": 365.0,
+            "public_key_algorithm": "RSAPublicKey",
+            "public_key_size": 1024,
+            "signature_hash_algorithm": "sha1",
+            "san_dns_names": [
+                "weaktest01.pki.local"
+            ],
+            "san_ip_addresses": [],
+            "sha256_fingerprint": "4c819c9b50a22d2b69a96dfeaf0c194f206a221ea42c16a3cc75a6ae20e08aa6",
+            "findings": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weaktest01.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ]
+        }
+    ],
+    "scan_errors": []
+}

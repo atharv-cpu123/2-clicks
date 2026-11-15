@@ -1,0 +1,559 @@
+{
+    "analysis_id": "RISK-20261114-145906",
+    "analyzed_at": "2026-11-14T14:59:06.874774+00:00",
+    "source_scan_id": "PKI-20261114-145906",
+    "certificates_analyzed": 63,
+    "health_score": 50.48,
+    "health_status": "HIGH RISK",
+    "risk_points": 312,
+    "scoring_formula": {
+        "description": "Per certificate, add finding weights and cap at 10. Health Score = 100 - (Capped Risk Points / (Certificate Count * 10)) * 100",
+        "maximum_risk_points_per_certificate": 10,
+        "per_certificate_cap": 10,
+        "severity_weights": {
+            "CRITICAL": 10,
+            "HIGH": 6,
+            "MEDIUM": 3,
+            "LOW": 1
+        }
+    },
+    "summary": {
+        "critical": 15,
+        "high": 29,
+        "medium": 9,
+        "low": 0,
+        "total": 53
+    },
+    "prioritized_findings": [
+        {
+            "certificate": "demo100.crt",
+            "path": "sandbox\\certificates\\expired\\demo100.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T11:57:11+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "expired05.crt",
+            "path": "sandbox\\certificates\\expired\\expired05.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-11T19:36:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "nithin122.crt",
+            "path": "sandbox\\certificates\\expired\\nithin122.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T08:52:57+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "demoplease1.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demoplease1.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-14T10:39:01+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "expiringsoon01.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon01.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-12T21:31:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "expiringsoon03.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon03.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-12T21:31:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "expiringsoon05.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon05.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-12T21:31:19+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "test-expiring.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\test-expiring.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-12T21:29:58+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "expired.badssl.com.crt",
+            "path": "sandbox\\certificates\\live-test\\expired.badssl.com.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2015-04-12T23:59:59+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "server01.crt",
+            "path": "sandbox\\certificates\\valid\\server01.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T16:55:29+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "server02.crt",
+            "path": "sandbox\\certificates\\valid\\server02.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T17:30:25+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "valid01.crt",
+            "path": "sandbox\\certificates\\valid\\valid01.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "valid02.crt",
+            "path": "sandbox\\certificates\\valid\\valid02.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "valid03.crt",
+            "path": "sandbox\\certificates\\valid\\valid03.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "valid04.crt",
+            "path": "sandbox\\certificates\\valid\\valid04.crt",
+            "severity": "CRITICAL",
+            "code": "EXPIRED_CERTIFICATE",
+            "title": "Certificate has expired",
+            "description": "The certificate is past its expiration date.",
+            "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+            "recommendation": "Request approval to revoke and replace the certificate."
+        },
+        {
+            "certificate": "demo-899f31.crt",
+            "path": "sandbox\\certificates\\expired\\demo-899f31.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T08:00:36+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "expired02.crt",
+            "path": "sandbox\\certificates\\expired\\expired02.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T08:00:37+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "demo-dbf19b.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo-dbf19b.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T08:01:25+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "demo120.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo120.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T16:32:57+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "demo1200.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo1200.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T16:34:11+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "remediation-replacement.crt",
+            "path": "sandbox\\certificates\\remediation-tests\\remediation-replacement.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:00:11+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "remediation-test.crt",
+            "path": "sandbox\\certificates\\remediation-tests\\remediation-test.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T18:53:54+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "selfsigned01.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned01.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:07:03+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "selfsigned02.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned02.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:07:04+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "selfsigned03.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned03.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:07:05+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "selfsigned04.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned04.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:07:06+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "selfsigned05.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned05.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:07:07+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "selfsigned06.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned06.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-14T19:07:07+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "nithin1.crt",
+            "path": "sandbox\\certificates\\valid\\nithin1.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T08:46:21+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "nithin12.crt",
+            "path": "sandbox\\certificates\\valid\\nithin12.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T08:47:13+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "valid05.crt",
+            "path": "sandbox\\certificates\\valid\\valid05.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T06:52:26+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "valid06.crt",
+            "path": "sandbox\\certificates\\valid\\valid06.crt",
+            "severity": "HIGH",
+            "code": "EXPIRING_SOON",
+            "title": "Certificate is expiring soon",
+            "description": "The certificate expires within 7 days.",
+            "evidence": "Expires at: 2026-11-15T06:52:33+00:00",
+            "recommendation": "Plan certificate renewal before expiration."
+        },
+        {
+            "certificate": "weak01.crt",
+            "path": "sandbox\\certificates\\weak\\weak01.crt",
+            "severity": "HIGH",
+            "code": "WEAK_RSA_KEY",
+            "title": "RSA key is too small",
+            "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+            "evidence": "RSA key size: 1024 bits",
+            "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+        },
+        {
+            "certificate": "weak01.crt",
+            "path": "sandbox\\certificates\\weak\\weak01.crt",
+            "severity": "HIGH",
+            "code": "WEAK_SIGNATURE_ALGORITHM",
+            "title": "Weak signature hash algorithm",
+            "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+            "evidence": "Signature hash: sha1",
+            "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+        },
+        {
+            "certificate": "weak02.crt",
+            "path": "sandbox\\certificates\\weak\\weak02.crt",
+            "severity": "HIGH",
+            "code": "WEAK_RSA_KEY",
+            "title": "RSA key is too small",
+            "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+            "evidence": "RSA key size: 1024 bits",
+            "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+        },
+        {
+            "certificate": "weak02.crt",
+            "path": "sandbox\\certificates\\weak\\weak02.crt",
+            "severity": "HIGH",
+            "code": "WEAK_SIGNATURE_ALGORITHM",
+            "title": "Weak signature hash algorithm",
+            "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+            "evidence": "Signature hash: sha1",
+            "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+        },
+        {
+            "certificate": "weak03.crt",
+            "path": "sandbox\\certificates\\weak\\weak03.crt",
+            "severity": "HIGH",
+            "code": "WEAK_RSA_KEY",
+            "title": "RSA key is too small",
+            "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+            "evidence": "RSA key size: 1024 bits",
+            "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+        },
+        {
+            "certificate": "weak03.crt",
+            "path": "sandbox\\certificates\\weak\\weak03.crt",
+            "severity": "HIGH",
+            "code": "WEAK_SIGNATURE_ALGORITHM",
+            "title": "Weak signature hash algorithm",
+            "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+            "evidence": "Signature hash: sha1",
+            "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+        },
+        {
+            "certificate": "weak04.crt",
+            "path": "sandbox\\certificates\\weak\\weak04.crt",
+            "severity": "HIGH",
+            "code": "WEAK_RSA_KEY",
+            "title": "RSA key is too small",
+            "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+            "evidence": "RSA key size: 1024 bits",
+            "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+        },
+        {
+            "certificate": "weak04.crt",
+            "path": "sandbox\\certificates\\weak\\weak04.crt",
+            "severity": "HIGH",
+            "code": "WEAK_SIGNATURE_ALGORITHM",
+            "title": "Weak signature hash algorithm",
+            "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+            "evidence": "Signature hash: sha1",
+            "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+        },
+        {
+            "certificate": "weak05.crt",
+            "path": "sandbox\\certificates\\weak\\weak05.crt",
+            "severity": "HIGH",
+            "code": "WEAK_RSA_KEY",
+            "title": "RSA key is too small",
+            "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+            "evidence": "RSA key size: 1024 bits",
+            "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+        },
+        {
+            "certificate": "weak05.crt",
+            "path": "sandbox\\certificates\\weak\\weak05.crt",
+            "severity": "HIGH",
+            "code": "WEAK_SIGNATURE_ALGORITHM",
+            "title": "Weak signature hash algorithm",
+            "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+            "evidence": "Signature hash: sha1",
+            "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+        },
+        {
+            "certificate": "weaktest01.crt",
+            "path": "sandbox\\certificates\\weak\\weaktest01.crt",
+            "severity": "HIGH",
+            "code": "WEAK_RSA_KEY",
+            "title": "RSA key is too small",
+            "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+            "evidence": "RSA key size: 1024 bits",
+            "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+        },
+        {
+            "certificate": "weaktest01.crt",
+            "path": "sandbox\\certificates\\weak\\weaktest01.crt",
+            "severity": "HIGH",
+            "code": "WEAK_SIGNATURE_ALGORITHM",
+            "title": "Weak signature hash algorithm",
+            "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+            "evidence": "Signature hash: sha1",
+            "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+        },
+        {
+            "certificate": "demo100.crt",
+            "path": "sandbox\\certificates\\expired\\demo100.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=demo100.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "expired05.crt",
+            "path": "sandbox\\certificates\\expired\\expired05.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=expired05.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "nithin122.crt",
+            "path": "sandbox\\certificates\\expired\\nithin122.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=nithin122.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "weak01.crt",
+            "path": "sandbox\\certificates\\weak\\weak01.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=weak01.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "weak02.crt",
+            "path": "sandbox\\certificates\\weak\\weak02.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=weak02.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "weak03.crt",
+            "path": "sandbox\\certificates\\weak\\weak03.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=weak03.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "weak04.crt",
+            "path": "sandbox\\certificates\\weak\\weak04.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=weak04.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "weak05.crt",
+            "path": "sandbox\\certificates\\weak\\weak05.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=weak05.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        },
+        {
+            "certificate": "weaktest01.crt",
+            "path": "sandbox\\certificates\\weak\\weaktest01.crt",
+            "severity": "MEDIUM",
+            "code": "SELF_ISSUED_CERTIFICATE",
+            "title": "Subject and issuer are identical",
+            "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+            "evidence": "Subject: CN=weaktest01.pki.local",
+            "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+        }
+    ]
+}

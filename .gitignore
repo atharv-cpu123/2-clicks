@@ -1,0 +1,14 @@
+.env
+*.key
+*.pem
+sandbox/ca/secrets/
+sandbox/ca/init-password.txt
+.DS_Store
+__pycache__/
+*.pyc
+sandbox/ca/
+
+# Temporary backups
+*.backup
+*.bak
+*.pre-*

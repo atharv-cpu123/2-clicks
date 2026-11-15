@@ -1,0 +1,27 @@
+
+services:
+  step-ca:
+    image: smallstep/step-ca:latest
+    container_name: pki-local-ca
+    restart: unless-stopped
+
+    ports:
+      - "127.0.0.1:9000:9000"
+
+    environment:
+      DOCKER_STEPCA_INIT_NAME: "PKI Security Local CA"
+      DOCKER_STEPCA_INIT_DNS_NAMES: "localhost,step-ca,127.0.0.1"
+      DOCKER_STEPCA_INIT_PROVISIONER_NAME: "admin@pki.local"
+      DOCKER_STEPCA_INIT_ACME: "true"
+      DOCKER_STEPCA_INIT_PASSWORD_FILE: "/run/secrets/ca_init_password"
+
+    secrets:
+      - ca_init_password
+
+    volumes:
+      - ./ca:/home/step
+      - ./certificates:/certificates
+
+secrets:
+  ca_init_password:
+    file: ./ca/init-password.txt

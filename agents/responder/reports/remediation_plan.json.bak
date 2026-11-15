@@ -1,0 +1,1108 @@
+{
+    "plan_id": "REMEDIATION-20261114-143951",
+    "created_at": "2026-11-14T14:39:51.089637+00:00",
+    "source_analysis_id": "RISK-20261114-143950",
+    "total_findings_reviewed": 55,
+    "unique_certificates": 39,
+    "ca_issued_certificates": 28,
+    "not_ca_issued_certificates": 11,
+    "revocation_eligible_certificates": 28,
+    "severity_summary": {
+        "CRITICAL": 16,
+        "HIGH": 23,
+        "MEDIUM": 0,
+        "LOW": 0
+    },
+    "approval_required": true,
+    "remediation_items": [
+        {
+            "certificate": "demo100.crt",
+            "path": "sandbox\\certificates\\expired\\demo100.crt",
+            "severity": "CRITICAL",
+            "total_issues": 2,
+            "serial_number": "62B60E3D4C82ADA249455181E8E60697F472917E",
+            "issuer": "CN=demo100.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T11:57:11+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=demo100.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "demo12000.crt",
+            "path": "sandbox\\certificates\\expired\\demo12000.crt",
+            "severity": "CRITICAL",
+            "total_issues": 2,
+            "serial_number": "644D28909AAD7B3E88EE1AAB3B0F92340407A46F",
+            "issuer": "CN=demo12000.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T14:39:42+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=demo12000.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "expired05.crt",
+            "path": "sandbox\\certificates\\expired\\expired05.crt",
+            "severity": "CRITICAL",
+            "total_issues": 2,
+            "serial_number": "B7650C65BD6382809EEC84B453ED8F3C715A60",
+            "issuer": "CN=expired05.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-11T19:36:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=expired05.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "REJECTED",
+            "remediation_status": "NOT_STARTED",
+            "approval_decision": "REJECTED",
+            "approval_scope": "NONE",
+            "approval_timestamp": "2026-11-14T06:27:53.227919+00:00",
+            "approval_reason": "Reviewed from CertGuard frontend.",
+            "approved_by": "local_operator"
+        },
+        {
+            "certificate": "nithin122.crt",
+            "path": "sandbox\\certificates\\expired\\nithin122.crt",
+            "severity": "CRITICAL",
+            "total_issues": 2,
+            "serial_number": "5802BDB457CFAA9EC1A6248F3A4FEA73DF0EB198",
+            "issuer": "CN=nithin122.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T08:52:57+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=nithin122.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "demoplease1.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demoplease1.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "AC61B40FB43AC402EEB2AC3EF135D6FC",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-14T10:39:01+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "expiringsoon01.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon01.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "EDEDA3F88810FEED4738E29CAFA1CB28",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "APPROVED",
+            "remediation_status": "NOT_STARTED",
+            "approval_decision": "APPROVED",
+            "approval_scope": "DRY_RUN_ONLY",
+            "approval_timestamp": "2026-11-14T06:43:16.475046+00:00",
+            "approval_reason": "Reviewed from CertGuard frontend.",
+            "approved_by": "local_operator"
+        },
+        {
+            "certificate": "expiringsoon03.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon03.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "221F5273964BB419E8ECBF1393D04398",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "APPROVED",
+            "remediation_status": "NOT_STARTED",
+            "approval_decision": "APPROVED",
+            "approval_scope": "DRY_RUN_ONLY",
+            "approval_timestamp": "2026-11-14T06:38:09.089976+00:00",
+            "approval_reason": "Reviewed from CertGuard frontend.",
+            "approved_by": "local_operator"
+        },
+        {
+            "certificate": "expiringsoon05.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\expiringsoon05.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "46AF2180EA41F146EEB7CD5A04A57EE3",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:31:19+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "test-expiring.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\test-expiring.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "ECAA2058FA0B3DA7E74749808E8E464D",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-12T21:29:58+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "expired.badssl.com.crt",
+            "path": "sandbox\\certificates\\live-test\\expired.badssl.com.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "4AE79549FA9ABE3F100F17A478E16909",
+            "issuer": "CN=COMODO RSA Domain Validation Secure Server CA,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2015-04-12T23:59:59+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "server01.crt",
+            "path": "sandbox\\certificates\\valid\\server01.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "40ECB68E0BFEDBAA4DCC08CF0186B39C",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T16:55:29+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "server02.crt",
+            "path": "sandbox\\certificates\\valid\\server02.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "6718CD0754FC35038B83BB6DAB7B79FF",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T17:30:25+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "valid01.crt",
+            "path": "sandbox\\certificates\\valid\\valid01.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "9E9B5AFDADBA10C58B5A7B3D84D8EE76",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "valid02.crt",
+            "path": "sandbox\\certificates\\valid\\valid02.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "21FBEBD82EF5A310C594A19330966572",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "valid03.crt",
+            "path": "sandbox\\certificates\\valid\\valid03.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "5810D6644C1DE3117984BB352FDF1DB",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "valid04.crt",
+            "path": "sandbox\\certificates\\valid\\valid04.crt",
+            "severity": "CRITICAL",
+            "total_issues": 1,
+            "serial_number": "3E3C840E45CA82EBD6A31ADAD6F7D2EB",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRED_CERTIFICATE",
+                    "severity": "CRITICAL",
+                    "title": "Certificate has expired",
+                    "description": "The certificate is past its expiration date.",
+                    "evidence": "Expired at: 2026-11-13T19:31:18+00:00",
+                    "recommendation": "Request approval to revoke and replace the certificate."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "demo-899f31.crt",
+            "path": "sandbox\\certificates\\expired\\demo-899f31.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "6478702E5A234A4B5C7816D2C2382E12",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:00:36+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "APPROVED",
+            "remediation_status": "NOT_STARTED",
+            "approval_decision": "APPROVED",
+            "approval_scope": "TEST_ONLY",
+            "approval_timestamp": "2026-11-14T08:04:10.689901+00:00",
+            "approval_reason": "Reviewed from CertGuard frontend.",
+            "approved_by": "local_operator"
+        },
+        {
+            "certificate": "expired02.crt",
+            "path": "sandbox\\certificates\\expired\\expired02.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "CA5DBADBAA62EEB24185E587FB1F47DA",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:00:37+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "APPROVED",
+            "remediation_status": "NOT_STARTED",
+            "approval_decision": "APPROVED",
+            "approval_scope": "TEST_ONLY",
+            "approval_timestamp": "2026-11-14T08:04:15.981399+00:00",
+            "approval_reason": "Reviewed from CertGuard frontend.",
+            "approved_by": "local_operator"
+        },
+        {
+            "certificate": "demo-dbf19b.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo-dbf19b.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "8299B6F7DAD9F9815450AF110A47B0DC",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:01:25+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "demo120.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo120.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "CCB5A56FC7B213D40A241DECB9611C7D",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T16:32:57+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "demo1200.crt",
+            "path": "sandbox\\certificates\\expiring-soon\\demo1200.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "1A6A1F9FCCC28D7213F2D12A70B008C6",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T16:34:11+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "remediation-replacement.crt",
+            "path": "sandbox\\certificates\\remediation-tests\\remediation-replacement.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "1167D66253C8312065E46991F98B94F7",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:00:11+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "remediation-test.crt",
+            "path": "sandbox\\certificates\\remediation-tests\\remediation-test.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "9A440E33171D3485A89438C0965B7915",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T18:53:54+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "selfsigned01.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned01.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "85CE768523B8CDFCCE263921F4ABBEDB",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:03+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "selfsigned02.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned02.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "741C213897002EBAEAB085A4537A67E8",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:04+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "selfsigned03.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned03.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "41F5B451F888EC13EE962F526D8D8355",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:05+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "selfsigned04.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned04.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "2FD5235BE0321F88A446D4A28805706B",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:06+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "selfsigned05.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned05.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "3A73C430CF64B42843947C5BF09901CE",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:07+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "selfsigned06.crt",
+            "path": "sandbox\\certificates\\self-signed\\selfsigned06.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "B767D788C46EC449FAB68B8262DF1B27",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-14T19:07:07+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "nithin1.crt",
+            "path": "sandbox\\certificates\\valid\\nithin1.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "4DADDA66B3D0AD56877B7A33B9EF2C77",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:46:21+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "nithin12.crt",
+            "path": "sandbox\\certificates\\valid\\nithin12.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "53B77D37E6E136A4A9D008C6D51012AB",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T08:47:13+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "valid05.crt",
+            "path": "sandbox\\certificates\\valid\\valid05.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "7DBFDFCAA038AAB84AA6B51B9A6605AC",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T06:52:26+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "valid06.crt",
+            "path": "sandbox\\certificates\\valid\\valid06.crt",
+            "severity": "HIGH",
+            "total_issues": 1,
+            "serial_number": "2EDBEB353E82D585439D5E844BACCFA4",
+            "issuer": "CN=PKI Security Local CA Intermediate CA,O=PKI Security Local CA",
+            "ca_issued": true,
+            "revocation_eligible": true,
+            "issues": [
+                {
+                    "code": "EXPIRING_SOON",
+                    "severity": "HIGH",
+                    "title": "Certificate is expiring soon",
+                    "description": "The certificate expires within 7 days.",
+                    "evidence": "Expires at: 2026-11-15T06:52:33+00:00",
+                    "recommendation": "Plan certificate renewal before expiration."
+                }
+            ],
+            "proposed_action": "Request approval for local CA revocation, then plan certificate reissuance.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "weak01.crt",
+            "path": "sandbox\\certificates\\weak\\weak01.crt",
+            "severity": "HIGH",
+            "total_issues": 3,
+            "serial_number": "80ACF5D5266A8767",
+            "issuer": "CN=weak01.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak01.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "weak02.crt",
+            "path": "sandbox\\certificates\\weak\\weak02.crt",
+            "severity": "HIGH",
+            "total_issues": 3,
+            "serial_number": "B77FE35D464454CC",
+            "issuer": "CN=weak02.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak02.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "weak03.crt",
+            "path": "sandbox\\certificates\\weak\\weak03.crt",
+            "severity": "HIGH",
+            "total_issues": 3,
+            "serial_number": "D5599A88141C0A8C",
+            "issuer": "CN=weak03.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak03.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "weak04.crt",
+            "path": "sandbox\\certificates\\weak\\weak04.crt",
+            "severity": "HIGH",
+            "total_issues": 3,
+            "serial_number": "F1297EEE3E5F8975",
+            "issuer": "CN=weak04.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak04.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "weak05.crt",
+            "path": "sandbox\\certificates\\weak\\weak05.crt",
+            "severity": "HIGH",
+            "total_issues": 3,
+            "serial_number": "C5BB1B1F45BDC58B",
+            "issuer": "CN=weak05.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weak05.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        },
+        {
+            "certificate": "weaktest01.crt",
+            "path": "sandbox\\certificates\\weak\\weaktest01.crt",
+            "severity": "HIGH",
+            "total_issues": 3,
+            "serial_number": "FE210DD5125F9AB2",
+            "issuer": "CN=weaktest01.pki.local",
+            "ca_issued": false,
+            "revocation_eligible": false,
+            "issues": [
+                {
+                    "code": "WEAK_RSA_KEY",
+                    "severity": "HIGH",
+                    "title": "RSA key is too small",
+                    "description": "RSA keys smaller than 2048 bits do not meet this scanner's policy.",
+                    "evidence": "RSA key size: 1024 bits",
+                    "recommendation": "Replace the certificate with an RSA key of at least 2048 bits or an approved alternative."
+                },
+                {
+                    "code": "WEAK_SIGNATURE_ALGORITHM",
+                    "severity": "HIGH",
+                    "title": "Weak signature hash algorithm",
+                    "description": "SHA-1 and MD5 are not accepted by this scanner's security policy.",
+                    "evidence": "Signature hash: sha1",
+                    "recommendation": "Reissue the certificate using SHA-256 or a stronger approved hash."
+                },
+                {
+                    "code": "SELF_ISSUED_CERTIFICATE",
+                    "severity": "MEDIUM",
+                    "title": "Subject and issuer are identical",
+                    "description": "The certificate is self-issued based on matching subject and issuer names. This alone does not prove its signature is self-signed.",
+                    "evidence": "Subject: CN=weaktest01.pki.local",
+                    "recommendation": "Verify whether this certificate is explicitly trusted and whether a CA-issued certificate is required."
+                }
+            ],
+            "proposed_action": "Local CA revocation is not applicable. Investigate the issuing authority and remediate the certificate through the appropriate process.",
+            "approval_required": true,
+            "approval_status": "PENDING",
+            "remediation_status": "NOT_STARTED"
+        }
+    ]
+}
